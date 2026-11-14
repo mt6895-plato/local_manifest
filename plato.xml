@@ -17,7 +17,7 @@
 
     <!--Vendors Tree-->
     <project name="android_vendor_xiaomi_mt6895-common"     path="vendor/xiaomi/mt6895-common"     remote="plato"      />
-    <project name="android_vendor_xiaomi_plato"             path="vendor/xiaomi/plato"             remote="gl"         />
+    <project name="android_vendor_xiaomi_plato"             path="vendor/xiaomi/plato"             remote="gl" revision="seventeen"    />
 
     <!--Kernel Tree-->
     <project name="android_kernel_xiaomi_mt6895"            path="kernel/xiaomi/mt6895"            remote="plato"      />
