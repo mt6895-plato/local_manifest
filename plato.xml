@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!--Remotes-->
-    <remote name="plato"          fetch="https://github.com/mt6895-plato"          revision="17.0"         />
-    <remote name="gl"             fetch="https://gitlab.com/archcloudy"            revision="17.0"         />
+    <remote name="lineage"          fetch="https://github.com/LineageOS"            revision="lineage-24.0" />
+    <remote name="plato"            fetch="https://github.com/mt6895-plato"         revision="17.0"         />
 
-    <!--Devices Trees-->
-    <project name="android_device_xiaomi_plato"             path="device/xiaomi/plato"             remote="plato"   />
-    <project name="android_device_xiaomi_mt6895-common"     path="device/xiaomi/mt6895-common"     remote="plato"   />
-    <project name="android_device_mediatek_sepolicy_vndr"   path="device/mediatek/sepolicy_vndr"   remote="plato"   />
+    <!-- Vendor Remotes -->
+    <remote name="TheMuppets"       fetch="https://github.com/TheMuppets"           revision="lineage-24.0" />
+    <remote name="gl"               fetch="https://gitlab.com/archcloudy"           revision="17.0"         />
+ 
+    <!--Device Trees-->
+    <project name="android_device_xiaomi_plato"             path="device/xiaomi/plato"             remote="plato"       />
+    <project name="android_device_xiaomi_mt6895-common"     path="device/xiaomi/mt6895-common"     remote="lineage"     />
+    <project name="android_device_mediatek_sepolicy_vndr"   path="device/mediatek/sepolicy_vndr"   remote="lineage"     />
 
-    <!-- MiuiCamera (UNCOMMENT IF YOU WANT TO INCLUDE!) -->
-    <!--
-    <project name="android_device_xiaomi_plato-miuicamera"      path="device/xiaomi/plato-miuicamera"   remote="plato"  />
-    <project name="android_vendor_xiaomi_plato-miuicamera"      path="vendor/xiaomi/plato-miuicamera"   remote="gl"     />    
-    -->
-
-    <!--Vendors Tree-->
-    <project name="android_vendor_xiaomi_mt6895-common"     path="vendor/xiaomi/mt6895-common"     remote="plato"   />
-    <project name="android_vendor_xiaomi_plato"             path="vendor/xiaomi/plato"             remote="gl"      />
+    <!--Vendor Trees-->
+    <project name="android_vendor_xiaomi_mt6895-common"     path="vendor/xiaomi/mt6895-common"     remote="TheMuppets"  />
+    <project name="android_vendor_xiaomi_plato"             path="vendor/xiaomi/plato"             remote="gl"          />
 
     <!--Kernel Tree-->
-    <project name="android_kernel_xiaomi_mt6895"            path="kernel/xiaomi/mt6895"            remote="plato"   />
+    <project name="android_kernel_xiaomi_mt6895"            path="kernel/xiaomi/mt6895"            remote="lineage"     />
 
     <!--Hardware dependencies-->
-    <project name="android_hardware_xiaomi"                 path="hardware/xiaomi"                 remote="plato"   />
-    <project name="android_hardware_mediatek"               path="hardware/mediatek"               remote="plato"   />
+    <project name="android_hardware_xiaomi"                 path="hardware/xiaomi"                 remote="lineage"     />
+    <project name="android_hardware_mediatek"               path="hardware/mediatek"               remote="lineage"     />
 </manifest>
